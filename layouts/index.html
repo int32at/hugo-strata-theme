@@ -1,3 +1,17 @@
 {{ define "main" }}
-	{{ partial "recent-posts" . }}
+	{{ if .Site.Params.about && not .Site.Params.about.hide }}
+		{{ partial "about" . }}
+	{{ end }}
+
+	{{ if .Site.Params.portfolio && not .Site.Params.portfolio.hide }}
+		{{ partial "portfolio" . }}
+	{{ end }}
+
+	{{ if .Site.Params.recentposts && not .Site.Params.recentposts.hide }}
+		{{ partial "recent-posts" . }}
+	{{ end }}
+
+	{{ if .Site.Params.contact && not .Site.Params.contact.hide }}
+		{{ partial "contact" . }}
+	{{ end }}
 {{ end }}
