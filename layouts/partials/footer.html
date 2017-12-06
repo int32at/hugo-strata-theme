@@ -1,12 +1,3 @@
-{{ "<!-- Footer -->" | safeHTML }}
-<footer id="footer">
-	<ul class="copyright">
-		{{ range .Site.Params.sidebar.copyright }}
-		<li>{{ . | markdownify }}</li>
-		{{ end }}
-	</ul>
-</footer>
-
 {{ "<!-- Scripts -->" | safeHTML }}
 <script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
 <script src="{{ .Site.BaseURL }}js/jquery.poptrox.min.js"></script>

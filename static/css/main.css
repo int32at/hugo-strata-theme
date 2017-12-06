@@ -23,6 +23,7 @@
 
 	body {
 		line-height: 1;
+		overflow-y: scroll;
 	}
 
 	ol, ul {
@@ -2547,7 +2548,7 @@
 
 	#main {
 		margin-left: 35%;
-		max-width: 54em;
+		max-width: 100em;
 		padding: 2em 4em 2em 4em;
 		width: calc(100% - 35%);
 	}
@@ -3087,7 +3088,8 @@
 		/* Header */
 
 			#header {
-				padding: 4.5em 1.5em;
+				height: 100vh;
+				padding: 20vh 1.5em;
 			}
 
 				#header h1 br {
