@@ -3164,3 +3164,37 @@
 	 font-size: 20px;
 	 line-height: 36px;
  }
+
+@media screen and (max-width: 736px) {
+
+	#header.header-page {
+		height: 100px !important;
+		padding: 0 !important;
+	}
+
+	#header.header-page .icons {
+		display: none;
+	}
+
+	#header.header-page .avatar {
+		float: left;
+		padding: 1.2em !important;
+	}
+
+	#header.header-page h1 {
+		display: none;
+	}
+
+	#header.header-page #sidebar {
+		margin: 0 !important;
+	}
+
+	#header.header-page #sidebar ul {
+		margin: 0 !important;
+	}
+
+	#header.header-page #sidebar ul li {
+		float: left;
+		padding: 1.6em 0.5em !important;
+	}
+}

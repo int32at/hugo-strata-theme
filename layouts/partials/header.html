@@ -1,5 +1,5 @@
 {{ "<!-- Header -->" | safeHTML }}
-<header id="header">
+<div id="header" class="header-{{ .Kind }}">
 	{{ if not .Site.Params.avatar.hide }}
 	<a href="{{ .Site.BaseURL }}" class="image avatar"><img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" alt="" /></a>
 	{{ end }}
@@ -52,4 +52,4 @@
 		<li><a href="{{ if $.RSSLink }}{{ $.RSSLink }}{{ else }}{{ $.Site.RSSLink }}{{ end }}" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
 		{{ end }}
 	</ul>
-</header>
+</div>
